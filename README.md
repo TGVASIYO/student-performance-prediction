@@ -1,225 +1,154 @@
 # 🎓 Student Performance Prediction & Management System
 
-> **A command-line AI/ML project for managing student records, analyzing academic data, and predicting student performance.**
+<p align="center">
+
+### 🐍 Python  •  🗄️ MySQL  •  🤖 Machine Learning  •  📊 Analytics
+
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
+![Scikit Learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?style=for-the-badge\&logo=scikit-learn\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Project-181717?style=for-the-badge\&logo=github)
+
+**Manage students → Process data → Train ML → Predict performance → Analyze results**
+
+</p>
 
 ---
 
-## 📌 Overview
+## 💡 The Idea
 
-The **Student Performance Prediction & Management System** is a command-line based application developed using **Python, MySQL, Pandas, and Scikit-learn**.
+> 🎯 **Turn student data into meaningful performance insights.**
 
-The project combines **student record management, data preprocessing, machine learning, prediction, and model analysis** into a single system.
-
-Instead of maintaining student information separately and manually analyzing academic performance, the system provides a centralized workflow where users can:
-
-* Manage student records
-* Search and update student information
-* Clean and validate academic data
-* Train a machine learning model
-* Predict student performance
-* Evaluate model accuracy
-* Analyze important prediction features
-
-The application is designed to run completely through the **command line**, making it simple to execute and test in a terminal environment.
+This project combines **database management + data preprocessing + machine learning** in one practical application. Student records are stored in MySQL, processed using Python, and used to train a model for performance prediction.
 
 ---
 
-## ✨ Key Features
+## ✨ What Can It Do?
+
+```text
+┌─────────────────┐    ┌─────────────────┐
+│ 👨‍🎓 STUDENTS   │    │ 🗄️ DATABASE    │
+│                 │    │                 │
+│ Add • Edit      │───▶│ MySQL Records   │
+│ Search • Delete │    │ Persistent Data │
+└─────────────────┘    └────────┬────────┘
+                                │
+                                ▼
+┌─────────────────┐    ┌─────────────────┐
+│ 🧹 DATA         │───▶│ 🤖 MACHINE      │
+│ PROCESSING      │    │ LEARNING        │
+│                 │    │                 │
+│ Clean • Validate│    │ Train • Predict │
+└─────────────────┘    └────────┬────────┘
+                                │
+                                ▼
+                       ┌─────────────────┐
+                       │ 📊 INSIGHTS     │
+                       │                 │
+                       │ Accuracy        │
+                       │ Feature Impact  │
+                       └─────────────────┘
+```
+
+---
+
+## 🔄 ML Pipeline
+
+```mermaid
+flowchart LR
+A["👨‍🎓 Student Data"] --> B["🗄️ MySQL"]
+B --> C["🧹 Cleaning"]
+C --> D["📋 Features"]
+D --> E["🤖 ML Model"]
+E --> F["🔮 Prediction"]
+F --> G["📊 Results"]
+```
+
+---
+
+## 🚀 Core Features
+
+| 👨‍🎓 Management | 🧹 Processing |   🤖 ML  |     📊 Insights    |
+| :--------------: | :-----------: | :------: | :----------------: |
+|        Add       |     Clean     |   Train  |      Accuracy      |
+|      Search      |    Validate   |  Predict | Feature Importance |
+|       Edit       |    Prepare    | Evaluate |       Results      |
+|      Delete      |    Process    |  Analyze |         📈         |
+
+---
+
+## 📸 Project Showcase
+
+### 🖥️ Main Application
+
+<img width="650" height="500" alt="1_main_menu" src="https://github.com/user-attachments/assets/efe95df6-cb8e-4ca8-bac3-ee9e0e7a63d8" />
+
+
+<br><br><br>
 
 ### 👨‍🎓 Student Management
 
-The system provides complete CRUD operations for student records.
+<img width="950" height="340" alt="3_search_student" src="https://github.com/user-attachments/assets/bea2fa16-73c6-45cb-9709-18925ea13205" />
+<img width="1150" height="508" alt="2_view_all_students" src="https://github.com/user-attachments/assets/056a8039-d5ad-4ff8-b50c-d70d97a66aba" />
 
-* ➕ Add a student
-* 👁️ View all students
-* 🔎 Search for a student
-* ✏️ Edit student information
-* 🗑️ Delete student records
 
-### 🧹 Data Processing
+<br><br><br>
 
-Before machine learning is performed, the system can process the academic data.
+### 🤖 ML Prediction
 
-* Detect invalid values
-* Handle missing data
-* Validate student information
-* Prepare data for model training
+<img width="750" height="628" alt="4_data_cleaning" src="https://github.com/user-attachments/assets/7daf796e-5140-4402-b2f7-da77ed33203d" />
+<img width="750" height="268" alt="6_ml_prediction" src="https://github.com/user-attachments/assets/c35faf93-8b47-497b-90ae-62ddccece7fa" />
+<img width="650" height="220" alt="5_model_training" src="https://github.com/user-attachments/assets/e78556a2-050d-4f55-a5ed-213a8450095d" />
 
-### 🤖 Machine Learning
 
-The system uses machine learning to analyze student academic data.
+<br><br><br>
 
-* Train the prediction model
-* Use selected academic features
-* Generate performance predictions
-* Reuse the trained model for predictions
+### 📊 Results & Analysis
+<img width="1120" height="700" alt="8_feature_importance_chart" src="https://github.com/user-attachments/assets/8a2eb2cf-5a9a-4846-a557-7259a8a3a676" />
+<img width="650" height="220" alt="7_model_accuracy" src="https://github.com/user-attachments/assets/70af33b1-cebe-4706-9733-fe6eb1a69950" />
 
-### 📊 Model Evaluation
 
-The system provides basic model analysis.
-
-* Calculate prediction accuracy
-* Display model performance
-* Identify important input features
-* Help understand which academic factors influence predictions
-
-### 💾 MySQL Database
-
-Student records are stored in a **MySQL database**, providing persistent storage for the application.
-
-The database is used for:
-
-* Storing student records
-* Retrieving student information
-* Updating records
-* Deleting records
-* Providing data for machine learning
+<br><br><br>
 
 ---
 
-# 🖥️ Application Menu
-
-The application provides a simple interactive command-line menu:
+## 🛠️ Tech Stack
 
 ```text
-==================================================
-       STUDENT PERFORMANCE PREDICTION SYSTEM
-==================================================
-
-1. View all students
-2. Search student
-3. Add student
-4. Edit student
-5. Delete student
-6. Clean data
-7. Train model
-8. Predict result
-9. View accuracy
-10. View feature importance
-11. Exit
-
-==================================================
-Enter your choice:
-```
-
-The menu allows the evaluator to test each major functionality independently.
-
----
-
-# 🏗️ System Architecture
-
-```text
-                     ┌───────────────────┐
-                     │       USER        │
-                     └─────────┬─────────┘
-                               │
-                               ▼
-                     ┌───────────────────┐
-                     │     main.py       │
-                     │   CLI Interface   │
-                     └─────────┬─────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              │                │                │
-              ▼                ▼                ▼
-      ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
-      │   Student    │ │     Data     │ │  Machine     │
-      │  Management  │ │  Processing  │ │   Learning   │
-      └──────┬───────┘ └──────┬───────┘ └──────┬───────┘
-             │                │                │
-             ▼                ▼                ▼
-      ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
-      │    MySQL     │ │    Pandas    │ │ Scikit-learn │
-      │   Database   │ │              │ │     Model    │
-      └──────────────┘ └──────────────┘ └──────┬───────┘
-                                               │
-                                               ▼
-                                      ┌─────────────────┐
-                                      │ Prediction &    │
-                                      │ Model Analysis  │
-                                      └─────────────────┘
+🐍 Python        → Application & ML Logic
+🗄️ MySQL         → Persistent Student Data
+🐼 Pandas        → Data Processing
+🔢 NumPy         → Numerical Operations
+🤖 Scikit-learn  → Machine Learning
+🔧 Git/GitHub    → Version Control
 ```
 
 ---
 
-# 🔄 Project Workflow
+## ⚡ Quick Start
 
-```text
-START
-  │
-  ▼
-Connect to MySQL
-  │
-  ▼
-Display Main Menu
-  │
-  ├──► Manage Student Records
-  │
-  ├──► Clean Academic Data
-  │
-  ├──► Train ML Model
-  │
-  ├──► Predict Student Result
-  │
-  ├──► View Model Accuracy
-  │
-  └──► View Feature Importance
-  │
-  ▼
-Exit
+```bash
+git clone https://github.com/TGVASIYO/student-performance-prediction.git
+cd student-performance-prediction
+pip install -r requirements.txt
+python main.py
 ```
 
 ---
 
-# 🧰 Technologies Used
+## 🎯 What This Project Demonstrates
 
-| Technology      | Purpose                             |
-| --------------- | ----------------------------------- |
-| 🐍 Python       | Core application development        |
-| 🗄️ MySQL       | Student data storage                |
-| 🐼 Pandas       | Data processing and manipulation    |
-| 🔢 NumPy        | Numerical operations                |
-| 🤖 Scikit-learn | Machine learning                    |
-| 💻 Command Line | User interaction                    |
-| 🔧 Git & GitHub | Version control and project hosting |
+**Database Design** • **CRUD Operations** • **Data Cleaning**
+**Machine Learning** • **Prediction** • **Model Evaluation**
+**Feature Analysis** • **Python Programming** • **Git/GitHub**
 
 ---
 
-# 📂 Project Structure
+## 👨‍💻 Author
 
-```text
-student-performance-prediction/
-│
-├── main.py
-├── requirements.txt
-├── README.md
-├── statement.md
-└── .gitignore
-```
+**Priyabrata Patra**
+🎓 *Integrated M.Tech — Artificial Intelligence | VIT Bhopal*
 
-### Main Components
+<p align="center">
 
-**`main.py`**
-
-Contains the complete application logic, including:
-
-* MySQL connection
-* Student management
-* Data processing
-* Machine learning
-* Prediction
-* Model evaluation
-* Feature analysis
-* Command-line menu
-
-**`requirements.txt`**
-
-Contains the Python dependencies required to run the project.
-
-**`statement.md`**
-
-Contains the project's problem statement, scope, target users, and high-level features.
-
----
-
-# ⚙️ Requiremen
+### ⭐ Built with Python • MySQL • Machine Learning
